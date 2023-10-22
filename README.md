@@ -42,6 +42,23 @@ To run the new image, redis, zookeeper, kafka, kafka-ui, use -
 ```
 docker-compose up -d    
 ```
+All done!
+The backend service runs on  [http://localhost:8080](http://localhost:8080/).
+
+## Swagger
+
+Swagger can be used for api specification can be accessed at the following URL -
+
+```
+http://localhost:8080/swagger-ui/index.html#/
+```
+
+## Postman Collection
+
+-   [ECommerce.postman_collection.json](https://github.com/batuhangoktas/ECommerce/blob/master/postman/ECommerce.postman_collection.json)
+-   ![](https://github.com/batuhangoktas/ecommerce/blob/master/postman/collection.png)
+
+
 ## Usage
 All services except the /register and /login service work with the bearer token. Therefore, first of all, the /register and /login service should be called with
 
@@ -71,18 +88,14 @@ Bearer token is valid for 15 days.
 
 Detailed API specification for all services is available in the swagger interface.
 
-## Swagger
+## Kafka
 
-Swagger can be used for api specification can be accessed at the following URL -
+In cases where the invoice is not accepted, other teams can be informed by Kafka. The relevant kafka topic name is **"UnApprovedBill"**
 
+Detailed information about unapproved invoices is available in the kafka-ui
 ```
-http://localhost:8080/swagger-ui/index.html#/
+http://localhost:8090/ui/clusters/local/all-topics/UnApprovedBill
 ```
-
-## Postman Collection
-
--   [ECommerce.postman_collection.json](https://github.com/batuhangoktas/ECommerce/blob/master/postman/ECommerce.postman_collection.json)
--   ![](https://github.com/batuhangoktas/ecommerce/blob/master/postman/collection.png)
 
 ## Unit Test
 
