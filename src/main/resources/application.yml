@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console.enabled: true
+    console:
+      path: /h2-console
+      settings.trace: false
+      settings.web-allow-others: false
+  cache:
+    type: redis
+  data:
+    redis:
+      host: redis
+      port: 6379
+      password: eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81
+      repositories:
+        enabled: false
+
+  kafka:
+    producer:
+      acks: -1
+      bootstrap-servers: kafka:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+# jwt batuhan sha256
+secretkey: 7CA6E264880D73246FFC076F15B42A2AA5857021E4F3BEB06C3C83332CE59722
+
+creditlimit: ${CREDIT_LIMIT:200}

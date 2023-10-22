@@ -1,0 +1,14 @@
+com.accounting.ecommerce
+com.accounting.ecommerce.configuration
+com.accounting.ecommerce.controller
+com.accounting.ecommerce.data.dto
+com.accounting.ecommerce.data.entity
+com.accounting.ecommerce.data.mapper
+com.accounting.ecommerce.event.application
+com.accounting.ecommerce.event.kafka
+com.accounting.ecommerce.exception
+com.accounting.ecommerce.repository
+com.accounting.ecommerce.request
+com.accounting.ecommerce.service
+com.accounting.ecommerce.service.impl
+com.accounting.ecommerce.util
