@@ -82,6 +82,7 @@ http://localhost:8080/swagger-ui/index.html#/
 ## Postman Collection
 
 -   [ECommerce.postman_collection.json](https://github.com/batuhangoktas/ECommerce/blob/master/postman/ECommerce.postman_collection.json)
+-   ![](https://github.com/batuhangoktas/ecommerce/blob/master/postman/collection.png)
 
 ## Unit Test
 
@@ -97,6 +98,7 @@ ProductControllerTest.java
 
 ## JavaDoc
 
+![](https://github.com/batuhangoktas/ecommerce/blob/master/postman/javadoc.png)
 
 ## Credit
 **Batuhan Göktaş**
